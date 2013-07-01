@@ -16,6 +16,7 @@ myModule.directive('userstory', function (AngelloModel) {
 
     return {
         restrict: 'E',
+        templateUrl: 'partials/userstory.html',
         controller: controller
     };
 })

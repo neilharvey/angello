@@ -1,0 +1,9 @@
+<article class="story {{story.type}}" ng-click="setCurrentStory(story)">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="deleteStory(story.id);">&times;</button>
+        <h3>{{story.title}}</h3>
+    </div>
+    <div class="modal-body">
+        <p>{{story.description}}</p>
+    </div>
+</article>
