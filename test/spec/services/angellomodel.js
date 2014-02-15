@@ -1,21 +1,21 @@
 'use strict';
 
 describe('Service: angelloModel', function () {
-
+    
     // load the service's module
-    beforeEach(module('Angello'));
+    beforeEach(module('angelloApp'));
 
     var modelService;
 
     // Initialize the service
-    beforeEach(inject(function (angelloModel) {
-        modelService = angelloModel;
+    beforeEach(inject(function (AngelloModel) {
+        modelService = AngelloModel;
     }));
 
     describe('#getStatuses', function () {
 
         it('should return seven different statuses', function () {
-            expect(modelService.getStatuses().length).toBe(7);
+            expect(modelService.getStatuses().length).toBe(5);
         });
 
 
@@ -62,5 +62,5 @@ describe('Service: angelloModel', function () {
         });
 
     });
-
+    
 });

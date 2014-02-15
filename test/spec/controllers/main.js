@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
     // load the controller's module
-    beforeEach(module('Angello'));
+    beforeEach(module('angelloApp'));
 
     var MainCtrl,
       scope;
@@ -20,7 +20,7 @@ describe('Controller: MainCtrl', function () {
     it('should attach a list of story types to the scope', function () {
         expect(scope.types).toBeDefined();
     });
-
+    
     it('should attach a list of story statuses to the scope', function () {
         expect(scope.statuses).toBeDefined();
     });
@@ -28,5 +28,6 @@ describe('Controller: MainCtrl', function () {
     it('should attach a list of stories to the scope', function () {
         expect(scope.stories).toBeDefined();
     });
+    
 });
 
