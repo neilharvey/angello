@@ -8,7 +8,7 @@ angular.module('angelloApp')
                 element.css({ 'opacity': 0.9 });
             })
             .mouseout(function () {
-                element.css({ 'opacity': 1.0 })
+                element.css({ 'opacity': 1.0 });
             });
     };
 

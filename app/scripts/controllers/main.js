@@ -30,7 +30,7 @@ angular.module('angelloApp')
           var fields = ['title', 'description', 'criteria', 'status', 'type', 'reporter', 'assignee'];
 
           fields.forEach(function (field) {
-              $scope.currentStory[field] = $scope.editedStory[field]
+              $scope.currentStory[field] = $scope.editedStory[field];
           });
 
           $scope.resetForm();

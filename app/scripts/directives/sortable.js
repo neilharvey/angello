@@ -7,7 +7,7 @@ angular.module('angelloApp')
 
           element.sortable({
               items: 'li',
-              connectWith: ".list",
+              connectWith: '.list',
               receive: function (event, ui) {
                   var prevScope = angular.element(ui.item.prev()).scope();
                   var curScope = angular.element(ui.item).scope();

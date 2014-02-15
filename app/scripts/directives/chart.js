@@ -6,7 +6,7 @@ angular.module('angelloApp')
           var data = [];
           referenceArray.each(function (r) {
               var count = sourceArray.count(function (s) {
-                  return s[sourceProp] == r[referenceProp];
+                  return s[sourceProp] === r[referenceProp];
               });
               data.push([r[referenceProp], count]);
           });
@@ -14,7 +14,7 @@ angular.module('angelloApp')
       };
 
       var linker = function (scope, element, attrs) {
-          scope.data = parseDataForCharts(scope.sourceArray, attrs['sourceProp'], scope.referenceArray, attrs['referenceProp']);
+          scope.data = parseDataForCharts(scope.sourceArray, attrs.sourceProp, scope.referenceArray, attrs.referenceProp);
 
           if (element.is(':visible')) {
               $.plot(element, [scope.data], {
@@ -22,11 +22,11 @@ angular.module('angelloApp')
                       bars: {
                           show: true,
                           barWidth: 0.6,
-                          align: "center"
+                          align: 'center'
                       }
                   },
                   xaxis: {
-                      mode: "categories",
+                      mode: 'categories',
                       tickLength: 0
                   }
               });

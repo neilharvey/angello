@@ -40,7 +40,7 @@ angular.module('angelloApp')
 
       var deleteStory = function (id) {
           stories.remove(function (s) {
-              return s.id == id;
+              return s.id === id;
           });
       };
 
@@ -48,12 +48,12 @@ angular.module('angelloApp')
           newStory.id = new Date().getTime();
           stories.push(newStory);
 
-          $rootScope.$broadcast('storiesChanged')
+          $rootScope.$broadcast('storiesChanged');
       };
 
       var insertStoryAfter = function (story, prevStory) {
           stories = stories.remove(function (t) {
-              return t['id'] == story.id;
+              return t.id === story.id;
           });
 
           stories = stories.add(story, stories.findIndex(prevStory) + 1);
