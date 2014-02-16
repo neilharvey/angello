@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angelloApp', [
-  'ngRoute'//,'ngAnimate'
+  'ngRoute','ngAnimate'
 ])
   .config(function ($routeProvider) {
       $routeProvider
