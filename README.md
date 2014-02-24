@@ -1,4 +1,4 @@
-[Travis]
+[![Build Status](https://travis-ci.org/neilharvey/angello.png?branch=master)](https://travis-ci.org/neilharvey/angello)
 
 # Angello
 
