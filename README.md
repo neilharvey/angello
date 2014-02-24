@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/neilharvey/angello.png?branch=master)](https://travis-ci.org/neilharvey/angello)
-
 # Angello
+
+[![Build Status](https://travis-ci.org/neilharvey/angello.png?branch=master)](https://travis-ci.org/neilharvey/angello)
 
 A task-management application based on [Trello](https://trello.com/), written using [AngularJS](http://angularjs.org/).  
 
